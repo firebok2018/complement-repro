@@ -1,0 +1,57 @@
+---creacion de menus
+
+<menu
+xmlns:tools="http://chemas/android.com/tools"
+tools:context=".MainActivity"
+>
+<item android:id="@+id/configuracion"
+android:title="Configuracion"/>
+<item android:id="@+id/otro"
+android:title="pyrtpt"/>
+
+</menu>
+
+
+*******java
+ public void <nombre_etodo> (View view){
+Intent i=new Intentn(this, <nombreJAva.clase);
+startActivity(i);
+}
+
+***para salir de alapp
+public void <Nombre_AppZ>(View view){
+finish();
+}
+
+public boolean onCreateOptionsMenu(Menu mymenu){
+
+getMEnuinflater().inflate(R.memu.<nombre_activity>.mimenu )
+}
+
+/******android
+
+codigo para reproducir
+
+
+private void startPlay(String currentTitle){
+selectedFile.setText(currentTitle);
+seekBar.setProgress(0);
+player.stop();
+player.reset();
+try{
+player.setdataSource(file);
+player.prepare();
+player.start();
+}catch(filelegalStateException e){
+	e.printStrackTrace();
+}
+seekbar.setMAx(player.getDuration);
+playButton.setImageResource(android.R.drawable.ic_playpause);
+updatePosition();
+IsStarte=true;
+isStarted=false;
+}
+private void stopplay(){
+player.isStop();
+player.isExit();
+}
